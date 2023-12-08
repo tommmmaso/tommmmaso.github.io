@@ -5,12 +5,14 @@ let Helv;
 let P22;
 let Maz;
 let Voy;
+let letter = "&";
  
 function preload() {
-  Helv = loadFont('HelveticaNeueLTStd-Md.otf'); // Sostituisci con il tuo percorso e nome del file per il carattere Helvetica
-  P22 = loadFont('DomaineDisplay-Semibold.otf'); // Sostituisci con il tuo percorso e nome del file per il carattere Garamond
-  Maz = loadFont('MaziusDisplay-Bold.otf');
-  Voy = loadFont('voyage-bold.otf');
+
+  Helv = loadFont('assets/HelveticaNeueLTStd-Md copia.otf'); // Sostituisci con il tuo percorso e nome del file per il carattere Helvetica
+  P22 = loadFont('assets/DomaineDisplay-Semibold copia.otf'); // Sostituisci con il tuo percorso e nome del file per il carattere Garamond
+  Maz = loadFont('assets/MaziusDisplay-Bold copia.otf');
+  Voy = loadFont('assets/voyage-bold copia.otf');
 }
 
 function setup() {
@@ -56,16 +58,16 @@ function draw() {
 
       if (selectedFont === Maz) {
 // Se il font è "Maz", alza il punto di 170px
-      text('&', width / 2, height / 2 - 100);
+      text(letter, width / 2, height / 2 - 100);
 			} else if (selectedFont === Voy) {
 // Se il font è "Voy", alza il punto di 220px
- 			text('&', width / 2, height / 2 - 150);
+ 			text(letter, width / 2, height / 2 - 150);
 			} else if (selectedFont === P22) {
 // Se il font è "P22", alza il punto di 220px
- 	    text('&', width / 2, height / 2 - 150);
+ 	    text(letter, width / 2, height / 2 - 150);
 			} else {
 // La posizione standard
-      text('&', width / 2, height / 2 - 30);
+      text(letter, width / 2, height / 2 - 30);
       }
 			
 

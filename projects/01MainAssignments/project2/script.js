@@ -25,7 +25,7 @@ function setup() {
 
 function draw() {
   //background("#FFBF4C"); // Sfondo bianco
-	background("#B7A196")
+	background("#8B786D")
 
   // Itera sulla griglia
   for (let i = 0; i < grid.length; i++) {
@@ -40,7 +40,7 @@ function draw() {
 
       // Disegna il rettangolo della cella
       noStroke();
-      fill("#B7A196");
+      fill("#8B786D");
       rect(x, y, cellSize, cellSize);
 
 // Controlla cosa deve apparire dentro ogni sezione
@@ -54,7 +54,7 @@ function draw() {
       textFont(selectedFont);
       textAlign(CENTER, CENTER);
       textSize(750); // Cambia 70 con la grandezza desiderata
-      fill("#857E61");
+      fill("#F2F3D9");
 
       if (selectedFont === Maz) {
 // Se il font è "Maz", alza il punto di 170px
